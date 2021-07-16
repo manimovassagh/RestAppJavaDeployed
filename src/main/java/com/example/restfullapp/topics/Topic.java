@@ -15,7 +15,13 @@ public class Topic {
      */
     @Id
     private String id;
+    /**
+     * This is refer to name of each Topic
+     */
     private String name;
+    /**
+     * this refers to description of each Topic
+     */
     private String description;
 
     public Topic() {
