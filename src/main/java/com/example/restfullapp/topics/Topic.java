@@ -3,8 +3,16 @@ package com.example.restfullapp.topics;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/**
+ * This class shows each topics in our course collection website
+ */
 @Entity
 public class Topic {
+    /**
+     * String Id to specify unique specifier for each topic
+     * obviously later will be come from PostgreSQL
+     *
+     */
     @Id
     private String id;
     private String name;
