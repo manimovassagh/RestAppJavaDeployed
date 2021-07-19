@@ -1,4 +1,4 @@
-package com.example.restfullapp;
+package io.mani.restfullapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.example.restfullapp.course.topics;
+package io.mani.restfullapp.course.topics;
 
 import org.springframework.data.repository.CrudRepository;
 

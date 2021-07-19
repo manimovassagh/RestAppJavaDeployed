@@ -1,4 +1,4 @@
-package com.example.restfullapp.topics;
+package io.mani.restfullapp.topics;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

@@ -1,12 +1,20 @@
-package com.example.restfullapp.course.topics;
+package io.mani.restfullapp.course.topics;
 
 
-import com.example.restfullapp.topics.Topic;
+import io.mani.restfullapp.topics.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+
+/**
+ * This is a Controller class
+ * Controller Class in Spring  is a class that has Controller annotation and
+ * with this annotation Spring knows that what is the URL that we are mapping to
+ * and what should happen when the request comes to this certain URL.
+ * we provide both of them with class itself and annotation.
+ */
 
 @RestController
 public class CourseController {

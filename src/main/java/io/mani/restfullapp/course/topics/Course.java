@@ -1,8 +1,8 @@
-package com.example.restfullapp.course.topics;
+package io.mani.restfullapp.course.topics;
 
 
 
-import com.example.restfullapp.topics.Topic;
+import io.mani.restfullapp.topics.Topic;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
