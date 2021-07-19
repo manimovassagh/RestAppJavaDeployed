@@ -22,6 +22,7 @@ public class TopicService {
     private TopicRepository topicRepository;
 
     /**
+     * get all topics
      * this service define an arrayList for our topics in embedded database and return topics
      * @return topics
      */
@@ -33,22 +34,39 @@ public class TopicService {
     }
 
 
-
+    /**
+     * get specific Topic base on id
+     * @param id specific topic id
+     * @return specific topic in repository base on id
+     */
     public Optional<Topic> getTopic(String id) {
              return topicRepository.findById(id);
 
     }
 
+    /**
+     * add topic to our repository
+     * @param topic topic
+     */
     public void addTopics(Topic topic) {
         topicRepository.save(topic);
     }
 
+    /**
+     * update each topic base on specific id
+     * @param id id for each topic
+     * @param topic topic
+     */
     public void updateTopics(String id, Topic topic) {
         topicRepository.save(topic);
 
 
     }
 
+    /**
+     * delete topic base on given id
+     * @param id specific is for topic
+     */
     public void deleteTopics(String id) {
         topicRepository.deleteById(id);
 
