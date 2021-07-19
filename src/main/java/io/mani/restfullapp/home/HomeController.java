@@ -25,12 +25,12 @@ public class HomeController {
     @RequestMapping("/")
     public List<Departments> getSomeDepartmentsList() {
         return Arrays.asList(
-                new Departments("a", "Java Entwicklung", DepartmentCategories.IT, "This Department do training for Java"),
-                new Departments("a", "International Business", DepartmentCategories.BUSINESS, "This Department is doing International Business"),
-                new Departments("a", "Contract Department", DepartmentCategories.ECONOMIC, "This Department make a Deal with foreign companies"),
-                new Departments("a", "Vintage Business ", DepartmentCategories.ECONOMIC, "This Department is dealing Vintage things"),
-                new Departments("a", "Online Training", DepartmentCategories.TRAINING, "This Department Offer the best Online Trainings"),
-                new Departments("a", "International Business", DepartmentCategories.BUSINESS, "This Department is doing International Business")
+                new Departments("java", "Java Entwicklung", DepartmentCategories.IT, "This Department do training for Java"),
+                new Departments("business", "International Business", DepartmentCategories.BUSINESS, "This Department is doing International Business"),
+                new Departments("contract", "Contract Department", DepartmentCategories.ECONOMIC, "This Department make a Deal with foreign companies"),
+                new Departments("vintage", "Vintage Business ", DepartmentCategories.ECONOMIC, "This Department is dealing Vintage things"),
+                new Departments("training", "Online Training", DepartmentCategories.TRAINING, "This Department Offer the best Online Trainings"),
+                new Departments("painting", "Painting", DepartmentCategories.ART, "This Department is selling painting")
 
         );
     }
