@@ -30,6 +30,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class RestFullApplication {
 
+    /**
+     * @param args This is a main method argument that comes from args inside the run method in SpringApplication
+     */
     public static void main(String[] args) {
         SpringApplication.run(RestFullApplication.class, args);
     }
