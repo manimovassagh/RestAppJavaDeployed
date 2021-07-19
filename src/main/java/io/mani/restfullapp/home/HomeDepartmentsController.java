@@ -1,11 +1,14 @@
 package io.mani.restfullapp.home;
 
 
+import io.mani.restfullapp.topics.Topic;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -14,7 +17,7 @@ import java.util.List;
  * in my presentation.obviously it can come from Database with JPA Hibernate connection.
  */
 @RestController
-public class HomeController {
+public class HomeDepartmentsController {
 
     /**
      * this method handle the return value from get method in home directory.
@@ -23,16 +26,18 @@ public class HomeController {
      * you can check it out in home directory
      */
     @RequestMapping("/")
-    public List<Departments> getSomeDepartmentsList() {
+    public List<Departments> getDepartmentsList() {
         return Arrays.asList(
                 new Departments("java", "Java Entwicklung", DepartmentCategories.IT, "This Department do training for Java"),
                 new Departments("business", "International Business", DepartmentCategories.BUSINESS, "This Department is doing International Business"),
                 new Departments("contract", "Contract Department", DepartmentCategories.ECONOMIC, "This Department make a Deal with foreign companies"),
                 new Departments("vintage", "Vintage Business ", DepartmentCategories.ECONOMIC, "This Department is dealing Vintage things"),
                 new Departments("training", "Online Training", DepartmentCategories.TRAINING, "This Department Offer the best Online Trainings"),
-                new Departments("painting", "Painting", DepartmentCategories.ART, "This Department is selling painting")
+                new Departments("painting", "Painting", DepartmentCategories.ART, "This Department is selling painting"),
+                new Departments("Statues", "Statues", DepartmentCategories.ART, "This Department is selling Statues")
 
         );
     }
+
 
 }
