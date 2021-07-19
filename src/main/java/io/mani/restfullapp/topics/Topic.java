@@ -1,6 +1,7 @@
 package io.mani.restfullapp.topics;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
@@ -14,6 +15,7 @@ public class Topic {
      *
      */
     @Id
+    @GeneratedValue
     private String id;
     /**
      * This is refer to name of each Topic
