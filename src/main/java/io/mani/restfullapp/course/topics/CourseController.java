@@ -19,14 +19,22 @@ import java.util.Optional;
 @RestController
 public class CourseController {
 
+    /**
+     * with Autowired we define our service provider for this class
+     */
     @Autowired
     private CourseService courseService;
 
-
+    /**
+     * with this method we get all course which are under the specific topic it can be null one or many
+     * @param id with this id we specify which topic we have in parent category.
+     * @return all courses in our service which is under the specific id
+     */
     @RequestMapping("/topics/{id}/courses")
     public List<Course> getAllCourses( @PathVariable String id) {
         return courseService.getAllCourses(id);
     }
+
 
 
 
@@ -36,11 +44,13 @@ public class CourseController {
     }
 
 
+
     @RequestMapping(method = RequestMethod.POST,value = "/topics/{topicId}/courses")
     public void addCourse(@RequestBody Course course,@PathVariable String topicId){
         course.setTopic(new Topic(topicId,"",""));
         courseService.addCourse(course);
     }
+
 
     @RequestMapping(method = RequestMethod.PUT,value = "/topics/{topicId}/courses/{id}")
     public void updateCourse(@RequestBody Course course, @PathVariable String topicId){

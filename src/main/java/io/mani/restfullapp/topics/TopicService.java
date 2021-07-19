@@ -8,22 +8,31 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * This is a service of the api
+ * This Class is a what called in spring boot business service
+ * when the application starts spring make an instance from this service and register that instance.
+ * then we can use this business service inside other classed or controllers
  *
  */
 @Service
 public class TopicService {
-
+    /**
+     * this ia a repository for our Topics
+     */
     @Autowired
     private TopicRepository topicRepository;
 
-
+    /**
+     * this service define an arrayList for our topics in embedded database and return topics
+     * @return topics
+     */
     public List<Topic> getAllTopics() {
         // return topics;
         List<Topic> topics = new ArrayList<>();
         topicRepository.findAll().forEach(topics::add);
         return topics;
     }
+
+
 
     public Optional<Topic> getTopic(String id) {
              return topicRepository.findById(id);
