@@ -52,8 +52,9 @@ public class TopicController {
     /**
      * this method put a topic when the put method comes to URL
      * that means we can edit each topic based on id
+     *
      * @param topic topic
-     * @param id id of each topic
+     * @param id    id of each topic
      */
     @RequestMapping(method = RequestMethod.PUT, value = "/topics/{id}")
     public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
@@ -62,6 +63,7 @@ public class TopicController {
 
     /**
      * This method delete a topic base on specific given id
+     *
      * @param id id to specify which topic must be deleted.
      */
     @RequestMapping(method = RequestMethod.DELETE, value = "/topics/{id}")

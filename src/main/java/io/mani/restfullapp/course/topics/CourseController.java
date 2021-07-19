@@ -37,21 +37,33 @@ public class CourseController {
 
 
 
-
+    /**
+     * with this method we get specific course  base on given id which are under the specific topic
+     * @param id with this id we specify which course we are looking for
+     * @return specific course base on given id
+     */
     @RequestMapping("/topics/{topicId}/courses/{id}")
     public Optional<Course> getCourse(@PathVariable String id) {
         return courseService.getCourse(id);
     }
 
 
-
+    /**
+     * with this method we add new course to our program.
+     * @param course the course which will be added
+     * @param topicId the id to show under which topic category this specific course mus be saved.
+     */
     @RequestMapping(method = RequestMethod.POST,value = "/topics/{topicId}/courses")
     public void addCourse(@RequestBody Course course,@PathVariable String topicId){
         course.setTopic(new Topic(topicId,"",""));
         courseService.addCourse(course);
     }
 
-
+    /**
+     * with this method we update course base on given id
+     * @param course the course that should be updated.
+     * @param topicId shows the specific course to be updated.
+     */
     @RequestMapping(method = RequestMethod.PUT,value = "/topics/{topicId}/courses/{id}")
     public void updateCourse(@RequestBody Course course, @PathVariable String topicId){
         course.setTopic(new Topic(topicId,"",""));
@@ -59,7 +71,10 @@ public class CourseController {
     }
 
 
-
+    /**
+     * with this method we will delete course base on specific given id
+     * @param id id to specify which course should be deleted.
+     */
     @RequestMapping(method = RequestMethod.DELETE,value = "/topics/{topicId}/courses/{id}")
     public void deleteTopic(@PathVariable String id){
         courseService.deleteCourse(id);

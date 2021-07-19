@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * <h1>Rest Api Application for Course Provider Handling</h1>
+ * <h1>Rest Api Application for Course Provider Platform</h1>
  * This program give you a RestfullApi Service in which you can
  * provide backend for a course provider Website.
  * The Backend consist of Three Parts first part is Topics at the top of the hierarchy.

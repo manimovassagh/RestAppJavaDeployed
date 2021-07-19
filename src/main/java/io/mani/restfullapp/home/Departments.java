@@ -40,7 +40,8 @@ public class Departments {
 
     /**
      * return id with get id method
-     *  @return id
+     *
+     * @return id
      */
     public String getId() {
         return id;
@@ -48,6 +49,7 @@ public class Departments {
 
     /**
      * set id with set id method
+     *
      * @param id set id
      */
     public void setId(String id) {
@@ -56,6 +58,7 @@ public class Departments {
 
     /**
      * return department name with getDepartmentName method
+     *
      * @return department name
      */
 
@@ -66,14 +69,17 @@ public class Departments {
 
     /**
      * set department Name with setDepartmentName method
+     *
      * @param departmentName set department Name
      */
+
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
 
     /**
      * return department Categories with getDepartmentCategories method
+     *
      * @return department Categories
      */
 
@@ -83,6 +89,7 @@ public class Departments {
 
     /**
      * set department Categories with setDepartmentCategories method
+     *
      * @param departmentCategories set department Categories
      */
     public void setDepartmentCategories(DepartmentCategories departmentCategories) {
@@ -91,6 +98,7 @@ public class Departments {
 
     /**
      * return department Description with getDepartmentDescription method
+     *
      * @return department Description
      */
 
@@ -100,6 +108,7 @@ public class Departments {
 
     /**
      * set department Description with setDepartmentDescription method
+     *
      * @param departmentDescription set department Description
      */
     public void setDepartmentDescription(String departmentDescription) {

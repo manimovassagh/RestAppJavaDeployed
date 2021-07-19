@@ -12,7 +12,6 @@ public class Topic {
     /**
      * String Id to specify unique specifier for each topic
      * obviously later will be come from PostgreSQL
-     *
      */
     @Id
     @GeneratedValue
@@ -25,6 +24,7 @@ public class Topic {
      * this refers to description of each Topic
      */
     private String description;
+
     /**
      * this is an empty constructor which works as default but in our case it is only for development purpose.
      */
@@ -33,9 +33,10 @@ public class Topic {
     }
 
     /**
-     *  this is the main constructor for Topic Class
-     * @param id define an id for each Topic .(will be from SQL Later)
-     * @param name define name for each Topic
+     * this is the main constructor for Topic Class
+     *
+     * @param id          define an id for each Topic .(will be from SQL Later)
+     * @param name        define name for each Topic
      * @param description define description for each Topic
      */
     public Topic(String id, String name, String description) {
@@ -43,8 +44,10 @@ public class Topic {
         this.name = name;
         this.description = description;
     }
+
     /**
      * This method get id for each Topic
+     *
      * @return id
      */
     public String getId() {
@@ -53,6 +56,7 @@ public class Topic {
 
     /**
      * This method set id for each Topic
+     *
      * @param id set id
      */
     public void setId(String id) {
@@ -61,14 +65,17 @@ public class Topic {
 
     /**
      * This method get name for each Topic
+     *
      * @return name for each Topic
      */
 
     public String getName() {
         return name;
     }
+
     /**
      * This method set name for each Topic
+     *
      * @param name set name for each Topic
      */
     public void setName(String name) {
@@ -78,6 +85,7 @@ public class Topic {
 
     /**
      * This method get description for each Topic
+     *
      * @return description for each Topic
      */
     public String getDescription() {
@@ -86,6 +94,7 @@ public class Topic {
 
     /**
      * This method set description for each Topic
+     *
      * @param description description for each Topic
      */
     public void setDescription(String description) {
