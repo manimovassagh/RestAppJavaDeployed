@@ -14,7 +14,7 @@ public class Topic {
      * obviously later will be come from PostgreSQL
      */
     @Id
-    @GeneratedValue
+
     private String id;
     /**
      * This is refer to name of each Topic
