@@ -14,14 +14,14 @@ import javax.persistence.ManyToOne;
 public class Course {
 
     /**
-     * String Id to specify unique specifier for each Course
-     * obviously later will be come from PostgreSQL
+     * String ID to specify unique specifier for each Course
+     * obviously later will become from PostgreSQL
      *
      */
     @Id
     private String id;
     /**
-     * This is refer to name of each Course
+     * This is referred to name of each Course
      */
     private String name;
     /**
