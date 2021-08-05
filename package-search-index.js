@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"io.mani.restfullapp"},{"l":"io.mani.restfullapp.course.topics"},{"l":"io.mani.restfullapp.home"},{"l":"io.mani.restfullapp.topics"}]
